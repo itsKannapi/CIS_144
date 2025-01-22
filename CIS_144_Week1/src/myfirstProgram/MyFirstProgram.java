@@ -6,7 +6,7 @@ public class MyFirstProgram {
         double PayRate = 16.5;
         double Payment = Hours * PayRate;
 
-        System.out.println(" Your Payment is => " + Payment);
+        System.out.println("Your Payment is => " + Payment);
         
     }
 }
