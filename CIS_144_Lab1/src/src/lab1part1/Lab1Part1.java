@@ -1,17 +1,30 @@
 package lab1part1;
 
+import java.util.Scanner;
+import java.util.Arrays;
+
 public class Lab1Part1 {
     public static void main(String[] args) {
-        int a = 60, b = 90, c = 20, d = 1000, e = 10;
+        Scanner scanner = new Scanner(System.in);
+        int[] integers = new int[5]; // Fixed array size issue
 
-        System.out.println("Highest: " + getHighest(a, b, c, d, e));
-        System.out.println("Lowest: " + getLowest(a, b, c, d, e));
-    }
-    public static int getHighest(int a, int b, int c, int d, int e) {
-        return Math.max(Math.max(Math.max(a, b), Math.max(c, d)), e); // Single line method
-    }
-    public static int getLowest(int a, int b, int c, int d, int e) {
-        return Math.min(Math.min(Math.min(a, b), Math.min(c, d)), e); // Single line method
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Enter integer #" + (i + 1) + ":");
+            integers[i] = scanner.nextInt();
+        }
+
+        Arrays.sort(integers); // Sorting makes min = first element, max = last element
+
+        System.out.println("Highest: " + getHighest(integers));
+        System.out.println("Lowest: " + getLowest(integers));
     }
 
+    public static int getHighest(int[] arr) {
+        return arr[arr.length - 1]; //
+    }
+
+    public static int getLowest(int[] arr) {
+        return arr[0];
+    }
 }
+
