@@ -1,30 +1,37 @@
 package lab1part1;
 
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Lab1Part1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] integers = new int[5]; // Fixed array size issue
 
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Enter integer #" + (i + 1) + ":");
-            integers[i] = scanner.nextInt();
+        System.out.println("Enter integer #1:");
+        int firstNumber = scanner.nextInt();
+
+        // Initialize highest and lowest with the first input
+        int highest = firstNumber;
+        int lowest = firstNumber;
+
+        for (int i = 2; i <= 5; i++) { // Start from 2 since we already took first input
+            System.out.println("Enter integer #" + i + ":");
+            int num = scanner.nextInt();
+
+            highest = getHighest(highest, num);
+            lowest = getLowest(lowest, num);
         }
 
-        Arrays.sort(integers); // Sorting makes min = first element, max = last element
-
-        System.out.println("Highest: " + getHighest(integers));
-        System.out.println("Lowest: " + getLowest(integers));
+        System.out.println("Highest: " + highest);
+        System.out.println("Lowest: " + lowest);
     }
 
-    public static int getHighest(int[] arr) {
-        return arr[arr.length - 1]; //
+    public static int getHighest(int currentHighest, int newNumber) {
+        return Math.max(currentHighest, newNumber);
     }
 
-    public static int getLowest(int[] arr) {
-        return arr[0];
+    public static int getLowest(int currentLowest, int newNumber) {
+        return Math.min(currentLowest, newNumber);
     }
 }
+
 
