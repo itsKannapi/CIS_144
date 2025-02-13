@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CIS_144.iml" filepath="$PROJECT_DIR$/.idea/CIS_144.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Lab1/CIS_144_Lab1.iml" filepath="$PROJECT_DIR$/CIS_144_Lab1/CIS_144_Lab1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIS_144_Lab2/CIS_144_Lab2.iml" filepath="$PROJECT_DIR$/CIS_144_Lab2/CIS_144_Lab2.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week1/CIS_144_Week1.iml" filepath="$PROJECT_DIR$/CIS_144_Week1/CIS_144_Week1.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week2/CIS_144_Week2.iml" filepath="$PROJECT_DIR$/CIS_144_Week2/CIS_144_Week2.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week3/CIS_144_Week3.iml" filepath="$PROJECT_DIR$/CIS_144_Week3/CIS_144_Week3.iml" />
