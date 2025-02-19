@@ -6,46 +6,36 @@ public class BankAppExtraCredit {
         String tempChar;
 
         // Get User's Name
-        String accountName = JOptionPane.showInputDialog("Enter your Name:");
-        double balance = Double.parseDouble(JOptionPane.showInputDialog("Enter the balance in your account:"));
-        BankAccount account = new BankAccount(accountName, balance);
-        JOptionPane.showMessageDialog(null, "Account Name: " + account.getName() + "\nAccount Balance: $" + account.getBalance());
+        String AccountName = JOptionPane.showInputDialog("Enter your Name:");
+        // Get User's Account Balance
+        String balanceInput = JOptionPane.showInputDialog("Enter the balance in your account:");
+        double Balance = Double.parseDouble(balanceInput);
 
-        // User Menu
-        tempChar = JOptionPane.showInputDialog("What would you like to do today?\n(W/w for Withdraw | D/d for Deposit)");
+        // Make an object instance
+        BankAccount Account = new BankAccount(AccountName, Balance);
 
-        if (tempChar.equalsIgnoreCase("D")) { // Case-insensitive comparison
-            temp = Double.parseDouble(JOptionPane.showInputDialog("How much would you like to deposit?"));
+        // Print the object made
+        JOptionPane.showMessageDialog(null, "Account Name: " + Account.getName() + "\nAccount Balance: $" + Account.getBalance());
 
-            if (temp > 1000) {
-                JOptionPane.showMessageDialog(null, "Transaction Invalid, you cannot deposit more than $1000!");
-            } else if (temp > 0) {
-                account.Deposit(temp);
-                JOptionPane.showMessageDialog(null, "Deposit successful! New Balance: $" + account.getBalance());
-            } else {
-                JOptionPane.showMessageDialog(null, "Invalid input, deposit must be greater than $0!");
-            }
+        // Ask for transaction type
+        tempChar = JOptionPane.showInputDialog("What would you like to do today?\nW/w for Withdraw | D/d for Deposit");
+
+        // Check for input and do the action accordingly
+        if(tempChar.equalsIgnoreCase("D")) {
+            String depositInput = JOptionPane.showInputDialog("How much would you like to Deposit?");
+            temp = Double.parseDouble(depositInput);
+            Account.Deposit(temp);
         }
         else if (tempChar.equalsIgnoreCase("W")) {
-            temp = Double.parseDouble(JOptionPane.showInputDialog("How much would you like to withdraw?"));
-
-            if (temp > 1000) {
-                JOptionPane.showMessageDialog(null, "Transaction Invalid, you cannot withdraw more than $1000!");
-            } else if (temp > account.getBalance()) {
-                JOptionPane.showMessageDialog(null, "Transaction Invalid, you cannot withdraw more than your balance!");
-            } else if (temp > 0) {
-                account.Withdraw(temp);
-                JOptionPane.showMessageDialog(null, "Withdrawal successful! New Balance: $" + account.getBalance());
-            } else {
-                JOptionPane.showMessageDialog(null, "Invalid input, withdrawal must be greater than $0!");
-            }
+            String withdrawInput = JOptionPane.showInputDialog("How much would you like to Withdraw?");
+            temp = Double.parseDouble(withdrawInput);
+            Account.Withdraw(temp);
         }
         else {
             JOptionPane.showMessageDialog(null, "Invalid Input, please put W/w for Withdraw | D/d for Deposit!");
         }
 
-        // Final Report
-        JOptionPane.showMessageDialog(null, "Thank you! Here is your report:\n" + "Name: " + account.getName() + "\nBalance: $" + account.getBalance());
+        // Create a report after it is done
+        JOptionPane.showMessageDialog(null, "Thank you! Here is your report:\nName: " + AccountName + "\nBalance: $" + Account.getBalance());
     }
 }
-
