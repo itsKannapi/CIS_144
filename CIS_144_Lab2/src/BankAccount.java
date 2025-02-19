@@ -11,7 +11,7 @@ public class BankAccount {
     }
     public void Withdraw(double w){
         if (w > 1000) {
-            System.out.println("Transaction Invalid, you cannot deposit more than $1000!");
+            System.out.println("Transaction Invalid, you cannot Withdraw more than $1000!");
         } else if (w < 1000) {
             balance -= w;
         } else {
