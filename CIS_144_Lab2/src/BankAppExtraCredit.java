@@ -25,6 +25,7 @@ public class BankAppExtraCredit {
             String depositInput = JOptionPane.showInputDialog("How much would you like to Deposit?");
             temp = Double.parseDouble(depositInput);
             Account.Deposit(temp);
+            System.out.println();
         }
         else if (tempChar.equalsIgnoreCase("W")) {
             String withdrawInput = JOptionPane.showInputDialog("How much would you like to Withdraw?");
