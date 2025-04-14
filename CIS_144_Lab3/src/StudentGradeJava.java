@@ -1,4 +1,3 @@
-package Lab3;
 import java.util.Scanner;
 
 public class StudentGradeJava {
