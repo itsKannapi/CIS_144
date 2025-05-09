@@ -12,15 +12,13 @@ public class FileManSamples {
 
 
     public static void main(String[] args) {
-        try
-        {
+        try {
             FileWriter gust = new FileWriter("employee.csv", true);
             System.out.print("How many employees do you want to enter? ==> ");
             numEmp = sc.nextInt();
             sc.nextLine();
 
-            for(int r = 1; r <= numEmp; r++)
-            {
+            for(int r = 1; r <= numEmp; r++) {
                 System.out.print("Enter the name of Employee # " + r + " ==> ");
                 name = sc.nextLine();
                 System.out.print("Enter the age of Employee # " + r + " ==> ");
@@ -32,13 +30,7 @@ public class FileManSamples {
                 System.out.println();
 
             }
-//            gust.write("Gustavo Alatta, CIS, Chicago\n");
-//            gust.write("Laurie Alfaro, CIS, Chicago\n");
-//            gust.write("Paul Croitorum, BUS, Chicago\n");
-//            gust.write("Jeff Jirout, IT, Chicago\n");
-//            gust.write("Sam Samba, NET, Chicago\n");
             gust.close();
-
         }
         catch(IOException e)
         {

@@ -7,10 +7,15 @@
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Lab2/CIS_144_Lab2.iml" filepath="$PROJECT_DIR$/CIS_144_Lab2/CIS_144_Lab2.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Lab3/CIS_144_Lab3.iml" filepath="$PROJECT_DIR$/CIS_144_Lab3/CIS_144_Lab3.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Lab4/CIS_144_Lab4.iml" filepath="$PROJECT_DIR$/CIS_144_Lab4/CIS_144_Lab4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIS_144_Lab5/CIS_144_Lab5.iml" filepath="$PROJECT_DIR$/CIS_144_Lab5/CIS_144_Lab5.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Midterm/CIS_144_Midterm.iml" filepath="$PROJECT_DIR$/CIS_144_Midterm/CIS_144_Midterm.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week1/CIS_144_Week1.iml" filepath="$PROJECT_DIR$/CIS_144_Week1/CIS_144_Week1.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week10/CIS_144_Week10.iml" filepath="$PROJECT_DIR$/CIS_144_Week10/CIS_144_Week10.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week11/CIS_144_Week11.iml" filepath="$PROJECT_DIR$/CIS_144_Week11/CIS_144_Week11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIS_144_Week12/CIS_144_Week12.iml" filepath="$PROJECT_DIR$/CIS_144_Week12/CIS_144_Week12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIS_144_Week14/CIS_144_Week14.iml" filepath="$PROJECT_DIR$/CIS_144_Week14/CIS_144_Week14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIS_144_Week15/CIS_144_Week15.iml" filepath="$PROJECT_DIR$/CIS_144_Week15/CIS_144_Week15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIS_144_Week16/CIS_144_Week16.iml" filepath="$PROJECT_DIR$/CIS_144_Week16/CIS_144_Week16.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week2/CIS_144_Week2.iml" filepath="$PROJECT_DIR$/CIS_144_Week2/CIS_144_Week2.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week3/CIS_144_Week3.iml" filepath="$PROJECT_DIR$/CIS_144_Week3/CIS_144_Week3.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week4/CIS_144_Week4.iml" filepath="$PROJECT_DIR$/CIS_144_Week4/CIS_144_Week4.iml" />
@@ -18,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week6/CIS_144_Week6.iml" filepath="$PROJECT_DIR$/CIS_144_Week6/CIS_144_Week6.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week7/CIS_144_Week7.iml" filepath="$PROJECT_DIR$/CIS_144_Week7/CIS_144_Week7.iml" />
       <module fileurl="file://$PROJECT_DIR$/CIS_144_Week9/CIS_144_Week9.iml" filepath="$PROJECT_DIR$/CIS_144_Week9/CIS_144_Week9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CIS_144_Lab5/FileCreator/FileCreator.iml" filepath="$PROJECT_DIR$/CIS_144_Lab5/FileCreator/FileCreator.iml" />
       <module fileurl="file://$PROJECT_DIR$/MidtermReview/MidtermReview.iml" filepath="$PROJECT_DIR$/MidtermReview/MidtermReview.iml" />
     </modules>
   </component>

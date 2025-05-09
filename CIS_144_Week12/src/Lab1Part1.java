@@ -27,6 +27,3 @@ public class Lab1Part1 {
         return min;
     }
 }
-
-
-
